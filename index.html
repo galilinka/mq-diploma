@@ -27,6 +27,12 @@
           <a class="nav__link" href="#">Темы</a>
           <a class="nav__link" href="#">Контакты</a>
         </nav>
+        <!-- Гамбургер -->
+        <div class="menu__button">
+          <div class="menu__button-label"></div>
+          <div class="menu__button-label"></div>
+          <div class="menu__button-label"></div>
+        </div>
       </div>
     </div>
     <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
@@ -34,40 +40,53 @@
 
   <!-- Всплывающее меню -->
   <div class="popup_hidden">
-  <div class="popup-wrapper">
-    <div class="popup">
-      <h2 class="popup-header">Ваш фидбек</h2>
-      <form class="popup-search">
-        <div class="popup-questions">
-          <p>Как часто вы заходите на сайт?</p>
-        </div>
-        <label class="question-group">
-          <span class="search-hint">Как часто вы заходите на сайт?</span>
-          <input class="field-search" name="query" placeholder="Почти каждый день" required>
-        </label>
-      </form>
+    <div class="popup-wrapper">
+      <div class="close">
+        <img class="close-img" src="svg/form-x.svg" alt="form-x">
+      </div>
+      <div class="popup">
+        <div class="popup-conteiner">
+          <h2 class="popup-header">Ваш фидбек</h2>
+          <form class="popup-search">
+            <div class="popup-questions">
+              <p>Как часто вы заходите на сайт?</p>
+            </div>
+            <div class="question-group">
+              <select class="select">
+                <option selected>Почти каждый день</option>
+              </select>
+            </div>
+          </form>
 
-      <form>
-        <div class="radio-box">
-          <div class="popup-questions">
-            <p>Вы подписаны на e-mail рассылку?</p>
-          </div>
-          <input type="radio" name="rating" value="yes" checked="">Да
-          <input type="radio" name="rating" value="no">Нет
-        </div>
-      </form>
+          <form class="popup-search">
+            <div class="radio-box">
+              <div class="popup-questions">
+                <p>Вы подписаны на e-mail рассылку?</p>
+              </div>
+              <label class="radio-group">
+                <input type="radio" class="radio" name="radio-group" checked>
+                <span class="radio-group-text">Да</span>
+              </label>
+              <label class="radio-group">
+                <input type="radio" class="radio" name="radio-group">
+                <span class="radio-group-text">Нет</span>
+              </label>
+            </div>
+          </form>
 
-      <form class="popup-search">
-        <div class="popup-questions">
-          <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+          <form class="popup-search">
+            <div class="popup-questions">
+              <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+            </div>
+            <label class="question-group">
+              <span class="search-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+              <input class="popup-field-search" name="query" placeholder="Может, больше рецептов?" required>
+              <button class="button-subscribe"><span class="visually-hidden">Отправить</span>Отправить</button>
+            </label>
+          </form>
         </div>
-        <label class="question-group">
-          <span class="search-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-          <input class="field-search" name="query" placeholder="Может больше рецептов?" required>
-        </label>
-      </form>
+      </div>
     </div>
-  </div>
   </div>
   </div>
 
